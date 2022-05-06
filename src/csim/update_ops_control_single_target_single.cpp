@@ -14,7 +14,8 @@
 #ifdef _MSC_VER
 #include <intrin.h>
 #else
-#include <x86intrin.h>
+//#include <x86intrin.h>
+#include <wasm_simd128.h>
 #endif
 
 // void single_qubit_control_single_qubit_dense_matrix_gate_single(UINT
