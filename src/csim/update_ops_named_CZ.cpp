@@ -9,7 +9,8 @@
 #ifdef _MSC_VER
 #include <intrin.h>
 #else
-#include <x86intrin.h>
+//#include <x86intrin.h>
+#include <wasm_simd128.h>
 #endif
 
 // void CZ_gate_old_single(UINT control_qubit_index, UINT target_qubit_index,

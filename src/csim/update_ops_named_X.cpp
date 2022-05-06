@@ -9,7 +9,8 @@
 #ifdef _MSC_VER
 #include <intrin.h>
 #else
-#include <x86intrin.h>
+//#include <x86intrin.h>
+#include <wasm_simd128.h>
 #endif
 
 // void X_gate_old(UINT target_qubit_index, CTYPE *state, ITYPE dim);

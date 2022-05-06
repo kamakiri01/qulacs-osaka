@@ -11,7 +11,8 @@
 
 #include <iostream>
 #else
-#include <x86intrin.h>
+//#include <x86intrin.h>
+#include <wasm_simd128.h>
 #endif
 
 // void H_gate_old_parallel(UINT target_qubit_index, CTYPE *state, ITYPE dim);
