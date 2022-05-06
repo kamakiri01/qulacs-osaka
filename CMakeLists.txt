@@ -18,9 +18,9 @@ endif()
 
 ##### Set default behavior #####
 set(DEFAULT_USE_SIMD Yes)
-set(DEFAULT_USE_OMP Yes)
+set(DEFAULT_USE_OMP No)
 set(DEFAULT_USE_GPU No)
-set(DEFAULT_USE_PYTHON Yes)
+set(DEFAULT_USE_PYTHON No)
 set(DEFAULT_USE_TEST Yes)
 set(DEFAULT_OPT_FLAGS "-mtune=native -march=native -mfpmath=both")
 
@@ -395,5 +395,5 @@ if(USE_PYTHON)
 endif()
 
 #dependency setting for ExternalProject
-add_dependencies(qulacs_core Cereal)
-add_dependencies(qulacs_core eigen)
+#add_dependencies(qulacs_core Cereal)
+#add_dependencies(qulacs_core eigen)
